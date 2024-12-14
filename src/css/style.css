@@ -1,0 +1,195 @@
+/* Установка box-sizing для всех элементов */
+* {
+  box-sizing: border-box;
+}
+
+/* Стили для body */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #638bcb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Стили для заголовка */
+.title {
+  font-size: 25px;
+  color: #ffffff;
+  margin: 15px 0 12px;
+  padding: 0 20px;
+}
+
+/* Стили для контейнера досок */
+.boards {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 0;
+  justify-content: center;
+}
+
+/* Стили для элемента колонки */
+.column__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: baseline;* {
+    box-sizing: border-box;
+  }
+  max-width: 257px;
+  width: 100%;
+  background-color: #2369aa;
+  margin: 0 15px;
+  padding: 10px;
+  transition: .3s, all ease;
+  border-radius: 12px;
+}
+
+/* Стили для заголовка колонки */
+.column__title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.column__title:focus {
+  outline: 1px solid rgba(5, 69, 122, 0.354);
+}
+
+/* Стили для списка */
+.list {
+  min-height: 30px;
+}
+
+/* Стили для плейсхолдера */
+.placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #23272b;
+  border-radius: 12px;
+}
+
+/* Стили для элемента списка */
+.list__item {
+  max-width: 257px;
+  max-height: 250px;
+  position: relative;
+  color: #b5c2cf;
+  background-color: #0b2e70;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 4px 0;
+  margin-bottom: 0.5em;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  cursor: grab;
+  align-self: center;
+}
+
+/* Стили для текста внутри элемента списка */
+.list__item span {
+  font-size: inherit;
+}
+
+/* Скрытие кнопки удаления */
+.delete__item-btn {
+  display: none;
+}
+
+/* Стили для кнопки удаления при наведении */
+.list__item:hover .delete__item-btn {
+  display: inline-block;
+  position: absolute;
+  right: -10px;
+  top: 18%;
+  transform: translateY(-50%);
+  margin-right: 12px;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
+/* Стили для активного элемента */
+.list__item:active {
+  cursor: grabbing;
+}
+
+/* Стили для перетаскиваемого элемента */
+.dragging {
+  opacity: 0.5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для формы */
+.form {
+  display: none;
+  border-radius: 3px;
+  margin-top: auto;
+}
+
+/* Стили для textarea */
+.textarea {
+  resize: none;
+  height: 60px;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: #dce2e7;
+  color: #2b2d2f;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+/* Стили для кнопок */
+.button {
+  display: flex;
+}
+
+/* Стили для кнопки добавления элемента */
+.add__item-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 14px;
+  background-color: #638bcb;
+  cursor: pointer;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Стили для кнопки отмены */
+.cancel__item-btn {
+  margin-top: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
+  width: 24px;
+}
+
+/* Стили для кнопки добавления */
+.add__btn {
+  cursor: pointer;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+/* Стили для span */
+span {
+  font-size: 22px;
+  margin-right: 8px;
+  color: #ffffff;
+}
